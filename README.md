@@ -1,0 +1,4 @@
+Primeira versão. 
+
+Requerimento:
+Pillow
