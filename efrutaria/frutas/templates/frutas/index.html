@@ -1,0 +1,33 @@
+<!-- frutas/templates/frutas/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sua E-Frutaria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Bem-vindo à E-Frutaria Virtual</h1>
+    <p>Oferecemos uma variedade de frutas frescas para você.</p>
+
+    <div class="row mt-4">
+        {% for fruta in frutas %}
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ fruta.imagem.url }}" class="card-img-top" alt="{{ fruta.nome }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ fruta.nome }}</h5>
+                    <p class="card-text">{{ fruta.descricao }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

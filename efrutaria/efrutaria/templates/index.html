@@ -1,0 +1,38 @@
+<!-- efrutaria/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sua E-Frutaria</title>
+    <!-- Adicione o link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Bem-vindo à E-Frutaria Virtual</h1>
+    <p>Oferecemos uma variedade de frutas frescas para você.</p>
+
+    <!-- Adicione seus produtos/frutas aqui -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'path_para_sua_imagem/fruta1.jpg' %}" class="card-img-top" alt="Fruta 1">
+                <div class="card-body">
+                    <h5 class="card-title">Nome da Fruta 1</h5>
+                    <p class="card-text">Descrição breve da fruta.</p>
+                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repita o bloco acima para mais frutas -->
+
+    </div>
+</div>
+
+<!-- Adicione o link para o Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
